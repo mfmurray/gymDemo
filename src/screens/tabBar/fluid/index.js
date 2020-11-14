@@ -94,6 +94,8 @@ class TabBar extends Component {
         <TouchableWithoutFeedback
           key={index}
           onPress={() => {
+
+            console.log('index ',index)
             if (index === this.state.lastSelectedIndex) {
               return;
             }

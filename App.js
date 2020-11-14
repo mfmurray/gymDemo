@@ -3,14 +3,14 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import { PersistGate } from 'redux-persist/es/integration/react'
 import { Provider } from 'react-redux';
-import { store, persistor } from './store/store';
+import { store, persistor } from './src/store';
 import { connect } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-import {Screen1} from './screens/screen1';
+import {MainScreen} from './src/screens/mainScreen';
 
 
 
@@ -26,8 +26,8 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
-            name="Screen1"
-            component={Screen1}
+            name="MainScreen"
+            component={MainScreen}
             options={{ title: 'Screen1',headerShown: false }}
           />
         </Stack.Navigator>
