@@ -7,6 +7,11 @@ Setup up project
 $ npm install
 ```
 
+Initliaze project
+```sh
+$ npm start or expo start
+```
+
 <br/>
 
 
